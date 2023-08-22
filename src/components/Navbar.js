@@ -1,7 +1,9 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate();
   return (
     <>
       <Box
@@ -17,6 +19,13 @@ function Navbar() {
         <Typography fontWeight={"bolder"} variant="subtitle1">
           Janmejay J.
         </Typography>
+        <Button
+          variant="outlined"
+          sx={{ borderColor: "#000", color: "#000", fontWeight: "bolder" }}
+          onClick={() => navigate("/")}
+        >
+          Home
+        </Button>
       </Box>
     </>
   );

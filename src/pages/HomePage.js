@@ -41,7 +41,7 @@ function HomePage() {
               transition: "all 0.3s ease-in-out",
               cursor: "pointer",
             }}
-            onClick={() => navigate("/post", { state: { post } })}
+            onClick={() => navigate("/post", { state: post })}
           >
             <Typography>{post.title}</Typography>
           </Box>
